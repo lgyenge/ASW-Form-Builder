@@ -119,7 +119,7 @@
     <div class="col-md-9">
         <mat-card>
             <h2 class="asw-card-header text-center alert-info asw-alert-info">Drag and Drop a form component</h2>
-            <mat-card-content>                
+            <mat-card-content>
                 <div cdkDropList
                     [cdkDropListData]="formContainer"
                     class="asw-list"
@@ -148,13 +148,13 @@
                                         </asw-header>
                                     </ng-container>
                                     <ng-container *ngSwitchCase="'qr-code'">
-                                        <asw-qrcode [control]="control"
+                                       <!--  <asw-qrcode [control]="control"
                                                     [controlIndex]="i"
                                                     [isPreviewTemplate]="true"
                                                     (qrCodeUpdateEvent)="updatedControl($event)"
                                                     (qrCodeDeleteEvent)="deleteControl($event)"
                                                     (duplicateControl)="duplicateControl($event)">
-                                        </asw-qrcode>
+                                        </asw-qrcode> -->
                                     </ng-container>
                                     <ng-container *ngSwitchCase="'image'">
                                         <asw-image [control]="control"
@@ -265,7 +265,7 @@
                                                     (buttonDeleteEvent)="deleteControl($event)"
                                                     (buttonClickEvent)="buttonClicked($event)"
                                                     (duplicateControl)="duplicateControl($event)">
-                                        </asw-button>                                       
+                                        </asw-button>
                                     </ng-container>
                                     <ng-container *ngSwitchCase="'paragraph'">
                                         <asw-paragraph [control]="control"

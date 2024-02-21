@@ -1,12 +1,12 @@
 <!-- <div class="row">
     <div class="col-md-12 text-right">
-        <button mat-raised-button 
+        <button mat-raised-button
                 type="button"
                 class="btn btn-secondary btn-sm float-end mb-2">Download Pdf
-        </button>                
+        </button>
     </div>
 </div> -->
-<div class="row">            
+<div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
@@ -25,11 +25,11 @@
                                                 [controlIndex]="i">
                                     </asw-header>
                                 </ng-container>
-                                <ng-container *ngSwitchCase="'qr-code'">
+                               <!--  <ng-container *ngSwitchCase="'qr-code'">
                                     <asw-qrcode [control]="control"
                                                 [controlIndex]="i">
                                     </asw-qrcode>
-                                </ng-container>
+                                </ng-container> -->
                                 <ng-container *ngSwitchCase="'image'">
                                     <asw-image [control]="control"
                                                [controlIndex]="i"
@@ -132,7 +132,7 @@
                             </div>
                         </ng-container>
                     </ng-container>
-                </div>                        
+                </div>
             </div>
         </div>
     </div>

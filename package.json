@@ -15,18 +15,17 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^16.2.2",
-    "@angular/cdk": "~16.2.1",
-    "@angular/common": "^16.2.2",
-    "@angular/compiler": "^16.2.2",
-    "@angular/core": "^16.2.2",
-    "@angular/forms": "^16.2.2",
-    "@angular/google-maps": "^16.2.1",
-    "@angular/material": "~16.2.1",
-    "@angular/platform-browser": "^16.2.2",
-    "@angular/platform-browser-dynamic": "^16.2.2",
-    "@angular/router": "^16.2.2",
-    "@asoftwareworld/qrcode": "^2.0.1",
+    "@angular/animations": "14.1.3",
+    "@angular/cdk": "14.1.3",
+    "@angular/common": "14.1.3",
+    "@angular/compiler": "14.1.3",
+    "@angular/core": "14.1.3",
+    "@angular/forms": "14.1.3",
+    "@angular/google-maps": "14.1.3",
+    "@angular/material": "14.1.3",
+    "@angular/platform-browser": "14.1.3",
+    "@angular/platform-browser-dynamic": "14.1.3",
+    "@angular/router": "14.1.3",
     "@types/fabric": "^5.3.3",
     "bootstrap": "^5.3.2",
     "fabric": "^5.3.0",
@@ -35,15 +34,15 @@
     "gulp-dart-sass": "^1.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-uglifycss": "^1.1.0",
-    "ng-packagr": "^16.1.0",
+    "ng-packagr": "^14.2.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.1"
+    "zone.js": "0.11.8"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.1",
-    "@angular/cli": "~16.2.1",
-    "@angular/compiler-cli": "^16.2.2",
+    "@angular-devkit/build-angular": "14.2.1",
+    "@angular/cli": "14.1.3",
+    "@angular/compiler-cli": "14.1.3",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
@@ -51,6 +50,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~5.1.6"
+    "typescript": "4.7.4"
   }
 }

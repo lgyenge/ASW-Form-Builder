@@ -19,7 +19,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSliderModule } from '@angular/material/slider';
 import { AswConfirmDialogModule } from '@asoftwareworld/form-builder/form-control/confirm-dialog';
-import { AswQrCodeModule } from '@asoftwareworld/qrcode';
+// import { AswQrCodeModule } from '@asoftwareworld/qrcode';
 
 import { AswQrCode } from './qrcode';
 import { AswQrCodeDialog } from './qrcode-dialog';
@@ -38,7 +38,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
         MatDividerModule,
         MatIconModule,
         AswConfirmDialogModule,
-        AswQrCodeModule,
+        // AswQrCodeModule,
         MatButtonModule,
         MatSliderModule,
         MatExpansionModule
