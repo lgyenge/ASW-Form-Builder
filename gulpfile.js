@@ -4,7 +4,12 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglifycss = require('gulp-uglifycss'),
     rename = require('gulp-rename'),
-    del = require('del'),
+    // del = require('del'),
+    // del = import('del'),
+    // import del from 'del';
+    // import { deleteAsync as del } from 'del';
+
+
     sass = require('gulp-dart-sass');
 
 gulp.task('build-css-prod', function() {
@@ -14,7 +19,7 @@ gulp.task('build-css-prod', function() {
         .pipe(gulp.dest('dist/theme'))
         .pipe(uglifycss({"uglyComments": true}))
         .pipe(rename('asw-theme.min.css'))
-        .pipe(gulp.dest('dist/theme'));    
+        .pipe(gulp.dest('dist/theme'));
 });
 
 gulp.task('images', function() {
@@ -23,9 +28,9 @@ gulp.task('images', function() {
 });
 
 //Cleaning previous gulp tasks from project
-gulp.task('clean', function() {
+/* gulp.task('clean', function() {
 	return del(['dist/theme']);
-});
+}); */
 
 //Copy readme
 gulp.task('readme', function() {
@@ -34,9 +39,10 @@ gulp.task('readme', function() {
 });
 
 //Building project with run sequence
-gulp.task('build-assets', 
-gulp.series('clean', 
-'build-css-prod', 
-'images', 
+gulp.task('build-assets',
+// gulp.series('clean',
+gulp.series(
+'build-css-prod',
+'images',
 'readme'));
 
