@@ -39,10 +39,12 @@ import { AswSlideToggleModule } from '@asoftwareworld/form-builder/form-control/
 import { AswTextareaModule } from '@asoftwareworld/form-builder/form-control/textarea';
 import { AswTextFieldModule } from '@asoftwareworld/form-builder/form-control/textfield';
 import { AswFormBuilder } from './form-builder';
+import { AuFormbuilderComponent } from './au-formbuilder/au-formbuilder.component';
 
 @NgModule({
     declarations: [
-        AswFormBuilder
+        AswFormBuilder,
+        AuFormbuilderComponent
     ],
     imports: [
         CommonModule,

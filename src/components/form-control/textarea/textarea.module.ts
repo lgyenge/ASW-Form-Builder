@@ -23,6 +23,8 @@ import { AswSharedDialogModule } from '@asoftwareworld/form-builder/form-control
 import { AswTextarea } from './textarea';
 import { AuTextarea } from './au-textarea';
 import { AuExtComponent } from '@asoftwareworld/form-builder/au-ext';
+import { AuTextareaViewComponent } from './au-textarea-view/au-textarea-view.component';
+import { AuTextareaTemplateComponent } from './au-textarea-template/au-textarea-template.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { AuExtComponent } from '@asoftwareworld/form-builder/au-ext';
     ],
     declarations: [
         AswTextarea,
-        AuTextarea
+        AuTextarea,
+        AuTextareaViewComponent,
+        AuTextareaTemplateComponent
     ],
     exports: [
         AswTextarea,

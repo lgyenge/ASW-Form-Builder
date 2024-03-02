@@ -26,7 +26,9 @@ import { AswImageDialog } from './image-dialog';
 import { AswImageUploadDialog } from './image-upload-dialog';
 
 import { AuImage } from './au-image';
-import { AuExtNoImageComponent } from '@asoftwareworld/form-builder/au-ext';
+import { AuExtNoImageComponent } from '@asoftwareworld/form-builder/au-ext-no-image';
+import { AuImageTemplateComponent } from './au-image-template/au-image-template.component';
+import { AuImageViewComponent } from './au-image-view/au-image-view.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { AuExtNoImageComponent } from '@asoftwareworld/form-builder/au-ext';
         AswImage,
         AswImageDialog,
         AswImageUploadDialog,
-        AuImage
+        AuImage,
+        AuImageTemplateComponent,
+        AuImageViewComponent
 
     ],
     exports: [

@@ -6,4 +6,4 @@
  * found in the LICENSE file
  */
 
-export * from './au-ext.component';
+export * from './au-ext-no-image.component';

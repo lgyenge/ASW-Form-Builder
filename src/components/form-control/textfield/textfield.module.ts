@@ -22,10 +22,9 @@ import { AswSharedDialogModule } from '@asoftwareworld/form-builder/form-control
 
 import { AswTextField } from './textfield';
 import { AuTextField } from './au-textfield';
-// import { AuExtComponent } from 'dist/au-ext';
-// import { AuExtComponent } from 'dist/form-control/core';
-// import { AuExtComponent } from '../../au-ext/au-ext.component';
 import { AuExtComponent } from '@asoftwareworld/form-builder/au-ext';
+import { AuTextfieldTemplateComponent } from './au-textfield-template/au-textfield-template.component';
+import { AuTextfieldViewComponent } from './au-textfield-view/au-textfield-view.component';
 
 
 
@@ -48,7 +47,9 @@ import { AuExtComponent } from '@asoftwareworld/form-builder/au-ext';
     ],
     declarations: [
         AswTextField,
-        AuTextField
+        AuTextField,
+        AuTextfieldTemplateComponent,
+        AuTextfieldViewComponent
     ],
     exports: [
         AswTextField,

@@ -33,9 +33,10 @@ import { AswSlideToggleModule } from '@asoftwareworld/form-builder/form-control/
 import { AswTextareaModule } from '@asoftwareworld/form-builder/form-control/textarea';
 import { AswTextFieldModule } from '@asoftwareworld/form-builder/form-control/textfield';
 import { AswPreviewTemplate } from './preview-template';
+import { AuFormviewerComponent } from './au-formviewer/au-formviewer.component';
 
 @NgModule({
-    declarations: [AswPreviewTemplate],
+    declarations: [AswPreviewTemplate, AuFormviewerComponent],
     imports: [
         CommonModule,
         FormsModule,
