@@ -7,7 +7,7 @@
  */
 
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, forwardRef } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -21,6 +21,13 @@ import { AswConfirmDialogModule } from '@asoftwareworld/form-builder/form-contro
 import { AswSharedDialogModule } from '@asoftwareworld/form-builder/form-control/core';
 
 import { AswTextField } from './textfield';
+import { AuTextField } from './au-textfield';
+// import { AuExtComponent } from 'dist/au-ext';
+// import { AuExtComponent } from 'dist/form-control/core';
+// import { AuExtComponent } from '../../au-ext/au-ext.component';
+import { AuExtComponent } from '@asoftwareworld/form-builder/au-ext';
+
+
 
 @NgModule({
     imports: [
@@ -36,13 +43,17 @@ import { AswTextField } from './textfield';
         MatIconModule,
         AswConfirmDialogModule,
         MatButtonModule,
-        AswSharedDialogModule
+        AswSharedDialogModule,
+        AuExtComponent,
     ],
     declarations: [
-        AswTextField
+        AswTextField,
+        AuTextField
     ],
     exports: [
-        AswTextField
+        AswTextField,
+        AuTextField
     ]
 })
 export class AswTextFieldModule { }
+

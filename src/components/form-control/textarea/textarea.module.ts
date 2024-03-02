@@ -21,6 +21,9 @@ import { AswConfirmDialogModule } from '@asoftwareworld/form-builder/form-contro
 import { AswSharedDialogModule } from '@asoftwareworld/form-builder/form-control/core';
 
 import { AswTextarea } from './textarea';
+import { AuTextarea } from './au-textarea';
+import { AuExtComponent } from '@asoftwareworld/form-builder/au-ext';
+
 
 @NgModule({
     imports: [
@@ -36,13 +39,16 @@ import { AswTextarea } from './textarea';
         MatIconModule,
         AswConfirmDialogModule,
         MatButtonModule,
-        AswSharedDialogModule
+        AswSharedDialogModule,
+        AuExtComponent
     ],
     declarations: [
-        AswTextarea
+        AswTextarea,
+        AuTextarea
     ],
     exports: [
-        AswTextarea
+        AswTextarea,
+        AuTextarea
     ]
 })
 export class AswTextareaModule { }

@@ -156,7 +156,7 @@
                                                     (duplicateControl)="duplicateControl($event)">
                                         </asw-qrcode> -->
                                     </ng-container>
-                                    <ng-container *ngSwitchCase="'image'">
+                                    <!-- <ng-container *ngSwitchCase="'image'">
                                         <asw-image [control]="control"
                                                     [controlIndex]="i"
                                                     [isPreviewTemplate]="true"
@@ -164,8 +164,17 @@
                                                     (imageDeleteEvent)="deleteControl($event)"
                                                     (duplicateControl)="duplicateControl($event)">
                                         </asw-image>
-                                    </ng-container>
-                                    <ng-container *ngSwitchCase="'textfield'">
+                                    </ng-container> -->
+                                    <ng-container *ngSwitchCase="'image'">
+                                      <au-image [control]="control"
+                                                  [controlIndex]="i"
+                                                  [isPreviewTemplate]="true"
+                                                  (imageUpdateEvent)="updatedControl($event)"
+                                                  (imageDeleteEvent)="deleteControl($event)"
+                                                  (duplicateControl)="duplicateControl($event)">
+                                      </au-image>
+                                  </ng-container>
+                                    <!-- <ng-container *ngSwitchCase="'textfield'">
                                         <asw-textfield [control]="control"
                                                     [controlIndex]="i"
                                                     [isPreviewTemplate]="true"
@@ -174,8 +183,18 @@
                                                     (aswModelChange)="onSelectionChange($event)"
                                                     (duplicateControl)="duplicateControl($event)">
                                         </asw-textfield>
-                                    </ng-container>
-                                    <ng-container *ngSwitchCase="'textarea'">
+                                    </ng-container> -->
+                                    <ng-container *ngSwitchCase="'textfield'">
+                                      <au-textfield [control]="control"
+                                                  [controlIndex]="i"
+                                                  [isPreviewTemplate]="true"
+                                                  (textFieldUpdateEvent)="updatedControl($event)"
+                                                  (textFieldDeleteEvent)="deleteControl($event)"
+                                                  (aswModelChange)="onSelectionChange($event)"
+                                                  (duplicateControl)="duplicateControl($event)">
+                                      </au-textfield>
+                                  </ng-container>
+                                    <!-- <ng-container *ngSwitchCase="'textarea'">
                                         <asw-textarea [control]="control"
                                                         [controlIndex]="i"
                                                         [isPreviewTemplate]="true"
@@ -184,7 +203,17 @@
                                                         (aswModelChange)="onSelectionChange($event)"
                                                         (duplicateControl)="duplicateControl($event)">
                                         </asw-textarea>
-                                    </ng-container>
+                                    </ng-container> -->
+                                    <ng-container *ngSwitchCase="'textarea'">
+                                      <au-textarea [control]="control"
+                                                      [controlIndex]="i"
+                                                      [isPreviewTemplate]="true"
+                                                      (textAreaUpdateEvent)="updatedControl($event)"
+                                                      (textAreaDeleteEvent)="deleteControl($event)"
+                                                      (aswModelChange)="onSelectionChange($event)"
+                                                      (duplicateControl)="duplicateControl($event)">
+                                      </au-textarea>
+                                  </ng-container>
                                     <ng-container *ngSwitchCase="'number'">
                                         <asw-number [control]="control"
                                                     [controlIndex]="i"

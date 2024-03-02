@@ -7,7 +7,7 @@
  */
 
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, forwardRef } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -25,6 +25,10 @@ import { AswImage } from './image';
 import { AswImageDialog } from './image-dialog';
 import { AswImageUploadDialog } from './image-upload-dialog';
 
+import { AuImage } from './au-image';
+import { AuExtNoImageComponent } from '@asoftwareworld/form-builder/au-ext';
+
+
 @NgModule({
     imports: [
         CommonModule,
@@ -40,17 +44,22 @@ import { AswImageUploadDialog } from './image-upload-dialog';
         MatButtonToggleModule,
         MatFormFieldModule,
         MatInputModule,
-        MatButtonModule
+        MatButtonModule,
+        AuExtNoImageComponent
+
     ],
     declarations: [
         AswImage,
         AswImageDialog,
-        AswImageUploadDialog
+        AswImageUploadDialog,
+        AuImage
+
     ],
     exports: [
         AswImage,
         AswImageDialog,
-        AswImageUploadDialog
+        AswImageUploadDialog,
+        AuImage
     ]
 })
 export class AswImageModule { }

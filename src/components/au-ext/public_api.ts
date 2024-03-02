@@ -6,10 +6,5 @@
  * found in the LICENSE file
  */
 
-export * from './image';
-export * from './image-upload-dialog';
-export * from './image-dialog';
-export * from './image.module';
-
-// !!! gyl add
-export * from './au-image';
+export * from './au-ext.component';
+export * from './au-ext-no-image.component';

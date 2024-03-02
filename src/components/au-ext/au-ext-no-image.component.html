@@ -1,0 +1,84 @@
+<ng-template [ngIf]="!isPreviewTemplate">
+  <div class="row mb-2">
+    <div class="col-md-12"></div>
+  </div>
+  <ng-container *ngIf="addNote">
+    <mat-form-field
+      [appearance]="control.note.style"
+      class="asw-mat-form-field {{ control.note.customClass }}"
+    >
+      <mat-label>{{ control.note.label }}</mat-label>
+      <textarea
+        matInput
+        type="text"
+        [id]="control.note.id"
+        pattern="{{ control.note.pattern }}"
+        [placeholder]="control.note.label"
+        [(ngModel)]="control.note.value"
+        #input="ngModel"
+        [matTooltip]="control.note.tooltip"
+        [maxlength]="control.note.maxlength"
+        [minlength]="control.note.minlength"
+        [required]="control.note.isRequired"
+        [disabled]="control.note.isDisabled ? true : false"
+      ></textarea>
+      <mat-error
+        class="asw-mat-error"
+        *ngIf="input.invalid && (input.dirty || input.touched)"
+      >
+        <ng-container class="asw-mat-error" *ngIf="input?.errors?.required">
+          {{ control.note.label }} is required
+        </ng-container>
+        <ng-container class="asw-mat-error" *ngIf="input?.errors?.minlength">
+          Sorry, {{ control.note.label }} must be at least
+          {{ control.note.minlength }} characters long.
+        </ng-container>
+        <ng-container class="asw-mat-error" *ngIf="input?.errors?.pattern">
+          {{ control.note.customErrorMsg }}
+        </ng-container>
+      </mat-error>
+    </mat-form-field>
+
+    <div *ngIf="control.note.isDisabled === false" class="pull-right">
+      <button
+        mat-flat-button
+        color="warn"
+        type="button"
+        (click)="saveNote(control.note)"
+        matTooltip="Save"
+      >
+        Save
+      </button>
+      <button
+        mat-flat-button
+        color="warn"
+        type="button"
+        (click)="cancelNote(control.note)"
+        matTooltip="Cancel"
+      >
+        Cancel
+      </button>
+    </div>
+  </ng-container>
+  <div class="col-md-12 text-right float-right text-end">
+    <button
+      mat-icon-button
+      type="button"
+      matTooltip="Add Note"
+      [matTooltipPosition]="'below'"
+      (click)="enableAddNote()"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+
+    <button
+      mat-icon-button
+      type="button"
+      matTooltip="Add Action"
+      [matTooltipPosition]="'below'"
+      (click)="addAction(control, controlIndex)"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+</ng-template>

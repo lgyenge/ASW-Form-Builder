@@ -9,3 +9,5 @@
 export * from './textfield';
 export * from './textfield-control';
 export * from './textfield.module';
+// !! gyl add
+export * from './au-textfield';

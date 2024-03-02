@@ -6,6 +6,11 @@
             matTooltip="Upload">
             Upload
         </button>
+        <button mat-flat-button color="warn" type="button"
+            (click)="uploadImageDialog(control, controlIndex)"
+            matTooltip="Cancel">
+            Cancel
+        </button>
     </div>
 </div>
 
@@ -34,3 +39,4 @@
         </button>
     </div>
 </div>
+<au-ext-no-image [control]="control" ></au-ext-no-image>

@@ -9,3 +9,5 @@
 export * from './textarea';
 export * from './textarea-control';
 export * from './textarea.module';
+// !!!gyl add
+export * from './au-textarea';

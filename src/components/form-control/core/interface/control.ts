@@ -18,3 +18,4 @@ export interface Control {
 export interface StyleControl {
     style: 'fill' | 'outline';
 }
+

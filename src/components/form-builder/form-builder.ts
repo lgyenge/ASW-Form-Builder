@@ -11,7 +11,9 @@ import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angu
 import { MatDialog } from '@angular/material/dialog';
 import { Constants, NotificationService, ObjectUtils } from '@asoftwareworld/form-builder/form-control/core';
 import { AswJsonPreviewDialog } from '@asoftwareworld/form-builder/form-control/json-preview-dialog';
-import { CHOICE_CONTROLS, DATE_AND_GPS_CONTROLS, DIGITAL_CONTROLS, OTHERS_CONTROLS, SIMPLE_CONTROLS } from './default-controls';
+import { CHOICE_CONTROLS, DATE_AND_GPS_CONTROLS, OTHERS_CONTROLS, SIMPLE_CONTROLS } from './default-controls';
+import { AU_SIMPLE_CONTROLS, DIGITAL_CONTROLS, } from './au-default-controls';
+
 
 @Component({
     selector: 'asw-form-builder',
@@ -44,7 +46,7 @@ export class AswFormBuilder implements OnInit, OnChanges {
         private notificationService: NotificationService) { }
 
     ngOnInit(): void {
-        this.simpleControls = SIMPLE_CONTROLS;
+        this.simpleControls = AU_SIMPLE_CONTROLS;
         this.choiceControls = CHOICE_CONTROLS;
         this.dateAndGpsControls = DATE_AND_GPS_CONTROLS;
         this.digitalControls = DIGITAL_CONTROLS;

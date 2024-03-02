@@ -33,7 +33,35 @@ const USERNAME: TextFieldControl =
     style: 'outline',
     isRequired: true,
     maxlength: 50,
-    minlength: 0
+    minlength: 0,
+    note: {
+      id: '1',
+      controlType: 'textfield',
+      tooltip: 'Enter Text',
+      value: '',
+      label: 'Text Field',
+      style: 'outline',
+      column: 'col-md-6',
+      isRequired: false,
+      isDisabled: false,
+      maxlength: 50,
+      minlength: 0,
+    },
+
+    media: {
+      id: '1',
+      tooltip: 'Enter Text',
+      controlType: 'image',
+      label: 'Image',
+      isRequired: false,
+    },
+    action: {
+      id: '1',
+      tooltip: 'Enter Text',
+      controlType: 'image',
+      label: 'Image',
+      isRequired: false,
+    },
 };
 
 const FIRSTNAME: any =
